@@ -1,0 +1,52 @@
+@import "./reset";
+@import "./var";
+@import "./grid";
+
+// text styles
+.txt {
+  font-size: 13px;
+  font-weight: 400;
+  color: #7b7b7b;
+  &--uppercase {
+    text-transform: uppercase;
+  }
+}
+
+.main-wrap {
+  min-height: 100vh;
+  background-color: #374452;
+  border: 1px solid transparent;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 43px 9px 42px 30px;
+  &--orange {
+    background-color: orange;
+  }
+  &__img {
+    width: 121px;
+    height: 121px;
+    border-radius: 50%;
+    margin-right: 17px;
+  }
+  &__title {
+    margin-top: 20px;
+  }
+}
+
+.h3 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #374452;
+}
+
+.txt--center {
+  text-align: center;
+}
+
+.txt--right {
+  text-align: right;
+}

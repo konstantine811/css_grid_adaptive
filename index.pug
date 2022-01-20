@@ -1,0 +1,30 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=q, initial-scale=1.0")
+    title Document
+    link(rel="stylesheet", href="./styles/index.css")
+  body
+    include ./partials/mixins.pug
+    .main-wrap
+      .container
+        .row
+          .col-12.col-sm-6
+            +card('women.png')
+          .col-12.col-sm-6
+            +card('man.png', 'card--orange')
+          .col-12.col-sm-6
+            +card('man.png')
+          .col-12.col-sm-6
+            +card('women.png')
+    .main-wrap 
+      .container
+        .row 
+          .col-12.col-lg-4
+            +card('women.png')
+          .col-12.col-lg-4
+            +card('man.png', 'card--orange')
+          .col-12.col-lg-4
+            +card('man.png')
